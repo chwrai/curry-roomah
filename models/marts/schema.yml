@@ -1,0 +1,41 @@
+models:
+  - name: fct_listing_data
+    description: >
+      todo
+    columns:
+      - name: datetime
+        description: YYYY-MM-DD HH:mm:ss
+      - name: sender_name
+        description: sender name of the message
+      - name: message
+        description: the message
+      - name: wanted_gender
+        description : male/female/mix
+      - name: muslim
+        description : bool
+      - name: location
+        description: name of renting place
+      - name: monthly_rent
+        description: todo
+      - name: room_type
+        description: single/2-shared/3-shared/4-shared
+      - name: deposit_value
+        description: todo 
+      - name: deposit_type
+        description: refundable before/after contract ends
+      - name: rent_type
+        description: include utils or not
+      - name: own_transport_wanted
+        description: bool
+      - name: min_contract_term
+        description: minimum contract term of the whole tenancy agreement
+  - name: dim_location
+    description: >
+      todo
+    columns:
+      - name: location_name
+        description: todo
+      - name: distance_to_UM
+        description: todo
+      - name: public_transport
+        description: bus stops, lrt/mrt

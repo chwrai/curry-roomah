@@ -5,6 +5,11 @@ build/
 dist/
 wheels/
 *.egg-info
+tst.py
 
 # Virtual environments
 .venv
+
+# secrets
+.env
+*.session

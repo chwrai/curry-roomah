@@ -1,0 +1,13 @@
+models:
+  - name: stg_listing_data
+    description: >
+      Staging model for green taxi trip data. This model standardizes column names
+      and data types from the raw green_tripdata source, providing a clean foundation
+      for downstream transformations.
+    columns:
+      - name: datetime
+        description: YYYY-MM-DD HH:mm:ss
+      - name: sender_name
+        description: sender name of the message
+      - name: message
+        description: the message

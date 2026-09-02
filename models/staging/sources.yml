@@ -1,0 +1,22 @@
+sources:
+  - name: raw
+    description: Raw messages from Roomah@UM telegram group
+    database: taxi_rides_ny
+    schema: prod
+    tables:
+      - name: messages_data
+        description: Raw
+        columns:
+          - name: datetime
+            description: YYYY-MM-DD HH:mm:ss
+          - name: sender_name
+            description: sender name of the message
+          - name: message
+            description: the message
+
+        config:
+          loaded_at_field: datetime
+    config:
+      freshness:
+        warn_after: {count: 24, period: hour}
+        error_after: {count: 48, period: hour}
