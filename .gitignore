@@ -6,6 +6,7 @@ dist/
 wheels/
 *.egg-info
 tst.py
+postgres
 
 # Virtual environments
 .venv
